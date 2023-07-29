@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ul.fc.css.example.demo.controllers.ClientController">
+    <children>
+        <GridPane prefHeight="700.0" prefWidth="1500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="133.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="133.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="133.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="135.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="121.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="51.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="152.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="118.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="154.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="153.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="513.0" minWidth="10.0" prefWidth="150.0" />
+            </columnConstraints>
+            <rowConstraints>
+            <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="673.0" minHeight="10.0" prefHeight="640.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="267.0" prefWidth="282.0" text="      ID" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="   Título" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="     PDF" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text=" Data de Emissão" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="  Data de Expiração" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text=" Apoios" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="   Texto Descritivo" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="  Estado de Expiração" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                <Label prefHeight="267.0" prefWidth="282.0" text="  Lista de Apoiantes" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                <Label prefWidth="282.0" text="    Delegado Proponente" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                <Label prefHeight="60.0" prefWidth="88.0" text="      Tema" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                <ListView fx:id="cPlistView1" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView2" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView3" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView4" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView5" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView6" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView7" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView8" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView9" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView10" prefHeight="627.0" prefWidth="250.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                <ListView fx:id="cPlistView11" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="163.0" text="Voltar menu" onAction="#redirectToVoltar" />
+            </children>
+        </GridPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+version: "3"
+
+networks:
+  dbnet:
+    driver: bridge
+
+services:
+  pgserver:
+    build:
+      context: .
+      dockerfile: postgres.dockerfile
+    container_name: pgserver
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    expose:
+      - 5432
+    ports:
+      - 5432:5432
+    networks:
+      - dbnet
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=testdb
+    restart: unless-stopped
+  pgadmin:
+    container_name: pgadmin4_container
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "5050:80"
+    networks:
+      - dbnet
+
+  # APP*****************************************
+  springbootapp:
+    image: springbootapp:latest
+    build:
+      context: .
+    container_name: springbootapp
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - pgserver
+    networks:
+      - dbnet
+    command: /bin/bash
+
+volumes:
+  postgres-data:

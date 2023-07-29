@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ul.fc.css.example.demo.controllers.ClientController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1200.0">
+         <children>
+            <Button layoutX="450.0" layoutY="91.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Lista de votacoes em curso" onAction="#redirectToVotacoesEmCurso">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="501.0" layoutY="14.0" prefHeight="50.0" prefWidth="199.0" text="Democracia 2.0" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="450.0" layoutY="182.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Apresentar um projeto de lei">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="364.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Consultar projetos de lei" onAction="#redirectToConsultarProjetosLei">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="271.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Apoiar projetos de lei" onAction="#redirectToApoiarProjeto">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="455.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Escolher delegado">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="546.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="300.0" text="Votar numa proposta" onAction="#redirectToVotarProposta">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

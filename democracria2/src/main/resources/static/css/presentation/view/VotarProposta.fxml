@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pt.ul.fc.css.example.demo.controllers.ClientController">
+   <children>
+      <GridPane prefHeight="700.0" prefWidth="1200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="130.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="228.0" minHeight="0.0" prefHeight="31.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="601.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="601.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="601.0" minHeight="10.0" prefHeight="472.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField prefHeight="3.0" prefWidth="1200.0" text="Insira o ID da Proposta" GridPane.rowIndex="2" />
+            <Label prefHeight="37.0" prefWidth="288.0" text="        Escolha a Proposta em que deseja votar" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="-20.0" />
+               </padding></Label>
+            <TextField prefHeight="3.0" prefWidth="1200.0" text="Qual a sua Votação? T caso esteja a favor e F caso esteja contra." GridPane.rowIndex="4" />
+            <Label prefHeight="37.0" prefWidth="288.0" text="        Qual a sua votação?" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="-20.0" />
+               </padding></Label>
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="103.0" text="Submeter Voto" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#redirectToVoltar" prefHeight="27.0" prefWidth="163.0" text="Voltar ao menu principal">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
